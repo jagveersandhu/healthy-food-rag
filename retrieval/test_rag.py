@@ -12,7 +12,7 @@ def run_tests():
     rag = RAGPipeline(top_k=3)
 
     queries = [
-        "What is the recommended usage of Cauliflower?"
+        "What are the nutritions i can get by rolled oats and also what is recommended usage?"
     ]
 
     for q in queries:
