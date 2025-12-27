@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gemini-bg: #0e0e0e;
+  --color-gemini-pill: #1e1f20;
+}
+
+/* -------------------------------
+   GLOBAL BACKGROUND (Gemini)
+-------------------------------- */
+html,
+body {
+  background-color: var(--color-gemini-bg);
+  color-scheme: dark;
+}
+
+/* -------------------------------
+   HIDE SCROLLBARS (Gemini-style)
+-------------------------------- */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* -------------------------------
+   OPTIONAL: Hide scrollbar for pills
+-------------------------------- */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
